@@ -1,0 +1,26 @@
+{
+  "canisters": {
+    "STG_backend": {
+      "main": "src/STG_backend/main.mo",
+      "type": "motoko"
+    },
+    "STG_frontend": {
+      "dependencies": [
+        "STG_backend"
+      ],
+      "source": [
+        "src/STG_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "STG_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
